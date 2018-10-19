@@ -15,11 +15,7 @@ RUN  set -e;                                         \
                    git                               \ 
                    openssh-server                    \ 
                    openjdk-8-jdk                     \
-                   python                            \
-                   python-mock                       \
-                   python-nose                       \
-                   python-coverage                   \
-                   pylint                            \
+                   ant                               \
                    maven;                            \
      apt autoremove;                                 \
      apt clean;                                      \
