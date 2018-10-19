@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 MAINTAINER Rodrigo de la Fuente <rodrigo@delafuente.email>
 
 LABEL Description="Ubuntu container to be used as a Jenkins agent " \
