@@ -16,6 +16,7 @@ RUN  set -e;                                         \
                    openssh-server                    \ 
                    openjdk-8-jdk                     \
                    ant                               \
+                   antlr                             \
                    maven;                            \
      apt autoremove;                                 \
      apt clean;                                      \
