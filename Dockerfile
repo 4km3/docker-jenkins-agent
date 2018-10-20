@@ -15,6 +15,7 @@ RUN  set -e;                                         \
                    git                               \ 
                    openssh-server                    \ 
                    openjdk-8-jdk                     \
+                   openjdk-8-jre-headless            \
                    ant                               \
                    antlr                             \
                    maven;                            \
