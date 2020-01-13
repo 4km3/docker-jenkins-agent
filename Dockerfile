@@ -13,7 +13,8 @@ RUN  set -e;                                         \
      apt full-upgrade -y;                            \
      apt install -y build-essential                  \
                    git                               \ 
-                   openssh-server;                   \
+                   openssh-server                    \
+                   openjdk-8-jdk;                    \
      apt autoremove;                                 \
      apt clean;                                      \
      /usr/bin/ssh-keygen -A;                         \
