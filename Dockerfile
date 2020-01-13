@@ -13,13 +13,16 @@ RUN  set -e;                                         \
      apt full-upgrade -y;                            \
      apt install -y build-essential                  \
                    git                               \ 
+                   sudo                              \
                    openssh-server                    \
+                   docker-compose                    \
                    openjdk-8-jdk;                    \
      apt autoremove;                                 \
      apt clean;                                      \
      /usr/bin/ssh-keygen -A;                         \
      useradd -m -d /home/jenkins -s /bin/sh jenkins; \
-     echo 'jenkins:jenkins' | chpasswd;
+     echo 'jenkins:jenkins' | chpasswd;              \
+     echo 'jenkins ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/10-sudo
 
 EXPOSE 22
 
